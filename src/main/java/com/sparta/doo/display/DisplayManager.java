@@ -8,4 +8,5 @@ public class DisplayManager {
         String sortType = typeOfSort == 1 ? "Bubble sort: " : typeOfSort == 2 ? "Merge sort: " : "Error";
         System.out.println(Arrays.toString(sortedArray) + " - " + sortType + timeTaken + " nanoseconds");
     }
+
 }
