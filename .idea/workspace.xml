@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f4b21aa7-8659-4461-adbc-1a8dec800d72" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/doo/sortManager/SortLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/doo/sortManager/SorterLoaderException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/doo/sorters/BinaryTreeSorter.java" afterDir="false" />
+    <list default="true" id="f4b21aa7-8659-4461-adbc-1a8dec800d72" name="Default Changelist" comment="refactored most classes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/factory.properties" beforeDir="false" afterPath="$PROJECT_DIR$/resources/factory.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/logFile" beforeDir="false" afterPath="$PROJECT_DIR$/resources/logFile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/doo/binaryTree/BinaryTreeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/doo/binaryTree/BinaryTreeImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/doo/display/DisplayManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/doo/display/DisplayManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/doo/sortManager/SortFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/doo/sortManager/SortFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/doo/sortManager/SortManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/doo/sortManager/SortManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/doo/sortManager/Starter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/doo/sortManager/Starter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/doo/sortManager/SortManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/doo/sortManager/Starter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logFile" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logFile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/doo/sorters/BinaryTreeSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/doo/sorters/BinaryTreeSorter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/doo/sorters/BubbleSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/doo/sorters/BubbleSorter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/doo/sorters/SplitArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/doo/binaryTree/BinaryTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/doo/binaryTree/BinaryTreeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/doo/display/DisplayManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/doo/display/DisplayManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/doo/sortManager/SortFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/doo/sortManager/SortFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/doo/sorters/SplitArray.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,24 +29,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sparta/doo/sortManager/Starter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#234#235#0" expanded="true" />
-                <element signature="e#279#280#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sparta/doo/sortManager/SortFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="39" column="37" lean-forward="true" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
+            <state relative-caret-position="538">
+              <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -54,8 +40,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sparta/doo/display/DisplayManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="476">
+              <caret line="29" column="60" selection-start-line="29" selection-start-column="60" selection-end-line="29" selection-end-column="60" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -63,12 +52,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sparta/doo/sortManager/SortLoader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+            <state relative-caret-position="368">
+              <caret line="41" column="31" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#357#358#0" expanded="true" />
-                <element signature="e#386#387#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/sparta/doo/binaryTree/BinaryTreeTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="53" selection-start-line="53" selection-end-line="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -77,22 +76,63 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sparta/doo/sortManager/SortManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="340">
+              <caret line="51" column="48" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2023#2024#0" expanded="true" />
-                <element signature="e#2052#2053#0" expanded="true" />
+                <element signature="e#1745#1746#0" expanded="true" />
+                <element signature="e#1794#1795#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk-12.0.2/lib/src.zip!/java.logging/java/util/logging/Logger.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sparta/doo/binaryTree/BinaryTreeImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="221" column="13" selection-start-line="221" selection-start-column="13" selection-end-line="221" selection-end-column="13" />
+            <state relative-caret-position="385">
+              <caret line="129" column="13" lean-forward="true" selection-start-line="129" selection-start-column="13" selection-end-line="129" selection-end-column="13" />
+              <folding>
+                <element signature="e#3325#3326#0" expanded="true" />
+                <element signature="e#3358#3359#0" expanded="true" />
+                <element signature="e#3412#3413#0" expanded="true" />
+                <element signature="e#3445#3446#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/logFile">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sparta/doo/sorters/BubbleSorter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sparta/doo/sorters/Sorter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sparta/doo/sorters/BinaryTreeSorter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -124,27 +164,27 @@
         <option value="$PROJECT_DIR$/src/main/java/com/sparta/doo/App.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/sparta/doo/AppTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sparta/doo/sortManager/App.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sparta/doo/sorters/Sorter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sparta/doo/sorters/BubbleSort.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sparta/doo/sorters/BubbleSorter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sparta/doo/sorters/MergeSorter.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/sparta/doo/StarterTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sparta/doo/binaryTree/BinaryTreeImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sparta/doo/binaryTree/BinaryTree.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sparta/doo/binaryTree/ChildNotFoundException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sparta/doo/binaryTree/Node.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/sparta/doo/BinaryTreeTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sparta/doo/binaryTree/binaryTreeSorter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sparta/doo/sorters/BinaryTreeSorter.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/sparta/doo/binaryTree/BinaryTreeTest.java" />
         <option value="$PROJECT_DIR$/resources/factory.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/sparta/doo/sortManager/SortFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sparta/doo/sortManager/SortLoader.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sparta/doo/sortManager/Starter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sparta/doo/display/DisplayManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sparta/doo/sortManager/SorterLoaderExeption.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sparta/doo/sortManager/SorterLoaderException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sparta/doo/sorters/Sorter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sparta/doo/binaryTree/BinaryTreeImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/sparta/doo/binaryTree/BinaryTreeTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sparta/doo/display/DisplayManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sparta/doo/sortManager/SortManager.java" />
       </list>
     </option>
@@ -201,7 +241,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -247,15 +286,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="doo" type="462c0819:PsiDirectoryNode" />
-              <item name="display" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sortManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sortManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="doo" type="462c0819:PsiDirectoryNode" />
               <item name="sorters" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -288,18 +318,28 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="doo" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="sortManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sortManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="doo" type="462c0819:PsiDirectoryNode" />
+              <item name="binaryTree" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/com/sparta/doo" />
-    <property name="last_opened_file_path" value="G:/SortArray-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -328,7 +368,7 @@
       <module name="sortManager" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.sparta.doo.sortManager.*" />
+          <option name="PATTERN" value="com.sparta.doo.sorters.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -423,7 +463,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565605951382</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="refactored most classes">
+      <created>1565648139990</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1565648139990</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -448,6 +495,12 @@
     <history-entry file="BinaryTreeTest - 2019.08.12 at 13h 45m 16s.xml">
       <configuration name="BinaryTreeTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="BinaryTreeTest - 2019.08.13 at 09h 33m 51s.xml">
+      <configuration name="BinaryTreeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BinaryTreeTest - 2019.08.13 at 10h 03m 13s.xml">
+      <configuration name="BinaryTreeTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -462,7 +515,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.43326038" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15884861" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -472,7 +525,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32827735" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32827735" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -516,22 +569,28 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Added Binary Tree and factory.properties" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Binary Tree and factory.properties" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/sparta/doo/binaryTree/BinaryTreeImpl.java</url>
-          <line>57</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="refactored most classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactored most classes" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -554,7 +613,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sparta/doo/sorters/SplitArray.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sparta/doo/sorters/MergeSorter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -576,30 +634,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/logFile">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/BinaryTree.java">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sparta/doo/sorters/BubbleSorter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sparta/doo/sorters/Sorter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -620,13 +661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sparta/doo/binaryTree/BinaryTreeImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1037">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/factory.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -644,64 +678,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/sparta/doo/binaryTree/BinaryTreeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sparta/doo/sorters/BinaryTreeSorter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sparta/doo/sortManager/SortFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="39" column="37" lean-forward="true" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sparta/doo/sortManager/SortLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#386#387#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sparta/doo/sortManager/Starter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#234#235#0" expanded="true" />
-            <element signature="e#279#280#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sparta/doo/display/DisplayManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sparta/doo/sortManager/SorterLoaderException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -712,6 +688,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sparta/doo/sorters/SplitArray.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sparta/doo/sortManager/Starter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#234#235#0" expanded="true" />
+            <element signature="e#279#280#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sparta/doo/sorters/Sorter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sparta/doo/sortManager/SortFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-12.0.2/lib/src.zip!/java.logging/java/util/logging/Logger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
@@ -719,14 +722,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sparta/doo/sortManager/SortManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sparta/doo/sortManager/SortLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="368">
+          <caret line="41" column="31" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2023#2024#0" expanded="true" />
-            <element signature="e#2052#2053#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/logFile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/sparta/doo/binaryTree/BinaryTreeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sparta/doo/sorters/BubbleSorter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sparta/doo/sorters/BinaryTreeSorter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sparta/doo/binaryTree/BinaryTreeImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="129" column="13" lean-forward="true" selection-start-line="129" selection-start-column="13" selection-end-line="129" selection-end-column="13" />
+          <folding>
+            <element signature="e#3325#3326#0" expanded="true" />
+            <element signature="e#3358#3359#0" expanded="true" />
+            <element signature="e#3412#3413#0" expanded="true" />
+            <element signature="e#3445#3446#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sparta/doo/display/DisplayManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="29" column="60" selection-start-line="29" selection-start-column="60" selection-end-line="29" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sparta/doo/sortManager/SortManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="51" column="48" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1745#1746#0" expanded="true" />
+            <element signature="e#1794#1795#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,6 +1,7 @@
 package com.sparta.doo.display;
 
 import java.io.File;
+import java.text.DecimalFormat;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -25,8 +26,10 @@ public class DisplayManager {
     }
 
 
-    public void displaySortedArray(int[] sortedArray) {
+    public void displaySortedArray(int[] sortedArray, long timeTaken) {
+        DecimalFormat df = new DecimalFormat("###,###.###");
         System.out.println("After sorting:\n" + Arrays.toString(sortedArray));
+        System.out.println("Time taken: " + (df.format(timeTaken)) + " nano seconds");
 
 //        String sortType = typeOfSort == 1 ? "Bubble sort: " : typeOfSort == 2 ? "Merge sort: " : "Error";
 //        System.out.println(Arrays.toString(sortedArray) + " - " + sortType + timeTaken + " nanoseconds");

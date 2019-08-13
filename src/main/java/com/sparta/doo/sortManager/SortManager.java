@@ -57,8 +57,8 @@ class SortManager {
         displayManager.displayUnsortedArray(sorter, unsortedArray);
     }
 
-    private void printAfterSort(int[] sortedArray, long l) {
-        displayManager.displaySortedArray(sortedArray);
+    private void printAfterSort(int[] sortedArray, long timeTaken) {
+        displayManager.displaySortedArray(sortedArray, timeTaken);
     }
 
 

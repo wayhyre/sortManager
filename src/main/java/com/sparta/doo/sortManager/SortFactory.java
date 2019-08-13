@@ -1,7 +1,5 @@
 package com.sparta.doo.sortManager;
 
-import com.sparta.doo.sorters.BubbleSorter;
-import com.sparta.doo.sorters.MergeSorter;
 import com.sparta.doo.sorters.Sorter;
 
 import java.io.FileReader;

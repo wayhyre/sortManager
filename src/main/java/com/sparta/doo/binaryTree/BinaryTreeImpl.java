@@ -5,8 +5,6 @@ public class BinaryTreeImpl implements BinaryTree {
 
     private Node root;
     private int[] sortedTree;
-    private boolean isLeftEmpty = true;
-    private boolean isRightEmpty = true;
     private int numberOfNodes;
     private int count;
 
@@ -66,11 +64,13 @@ public class BinaryTreeImpl implements BinaryTree {
     }
 
     private void sortTreeAsc(Node node) {
+        boolean isLeftEmpty = true;
         if (!isLeftEmpty) {
             sortTreeAsc(node.getLeft());
         }
         sortedTree[count] = node.getValue();
         count++;
+        boolean isRightEmpty = true;
         if (!isRightEmpty) {
             sortTreeAsc((node.getRight()));
         }

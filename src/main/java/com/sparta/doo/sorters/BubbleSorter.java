@@ -1,6 +1,6 @@
 package com.sparta.doo.sorters;
 
-public class BubbleSorter implements Sorter{
+public class BubbleSorter implements Sorter {
 
     private static int[] bubbleSort(int[] list) {
         int i, j, temp; // i for outer loop, j for inner loop and a temp variable to do the number swaps
