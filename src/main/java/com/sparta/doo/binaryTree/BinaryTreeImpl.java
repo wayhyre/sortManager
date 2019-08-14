@@ -1,12 +1,16 @@
 package com.sparta.doo.binaryTree;
 
-public class BinaryTreeImpl implements BinaryTree {
+import org.apache.log4j.Logger;
 
+import java.util.Arrays;
+
+public class BinaryTreeImpl implements BinaryTree {
 
     private Node root;
     private int[] sortedTree;
     private int numberOfNodes;
     private int count;
+    private static Logger log = Logger.getLogger(BinaryTreeImpl.class.getName());
 
     public BinaryTreeImpl(int value) {
         root = new Node(value);
@@ -124,11 +128,40 @@ public class BinaryTreeImpl implements BinaryTree {
 
     @Override
     public int[] getSortedTreeAsc() {
-        return new int[0];
+        int[] sortedTreeArray = new int[numberOfNodes];
+        int index = 0;
+        getSortedTreeAscRec(root, sortedTreeArray, index);
+        return sortedTreeArray;
+    }
+
+    private int getSortedTreeAscRec(Node node, int[] sortedTreeArray, int index) {
+        if (node == null) {
+            return index;
+        }
+        index = getSortedTreeAscRec(node.getLeft(), sortedTreeArray, index);
+        sortedTreeArray[index] = node.getValue();
+        index++;
+        index = getSortedTreeAscRec(node.getRight(), sortedTreeArray, index);
+        return index;
     }
 
     @Override
     public int[] getSortedTreeDesc() {
-        return new int[0];
+        int[] sortedTreeArray = new int[numberOfNodes];
+        int index = 0;
+        getSortedTreeDescRec(root, sortedTreeArray, index);
+        log.debug("Sorted tree in descending order: " + Arrays.toString(sortedTreeArray));
+        return sortedTreeArray;
+    }
+
+    private int getSortedTreeDescRec(Node node, int[] sortedTreeArray, int index) {
+        if (node == null) {
+            return index;
+        }
+        index = getSortedTreeDescRec(node.getRight(), sortedTreeArray, index);
+        sortedTreeArray[index] = node.getValue();
+        index++;
+        index = getSortedTreeDescRec(node.getLeft(), sortedTreeArray, index);
+        return index;
     }
 }
