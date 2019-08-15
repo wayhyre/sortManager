@@ -45,9 +45,6 @@ public class DisplayManager {
             index++;
         }
         return names;
-        // display terminal sort type request
-        // display terminal array size request
-        // display unsorted array
-        // display sorted array (Done?)
+
     }
 }

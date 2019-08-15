@@ -131,6 +131,7 @@ public class BinaryTreeImpl implements BinaryTree {
         int[] sortedTreeArray = new int[numberOfNodes];
         int index = 0;
         getSortedTreeAscRec(root, sortedTreeArray, index);
+        log.debug("Sorted tree in ascending order: " + Arrays.toString(sortedTreeArray));
         return sortedTreeArray;
     }
 

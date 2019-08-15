@@ -9,7 +9,7 @@ public class BinaryTreeSorter implements Sorter {
     @Override
     public int[] sortArray(int[] arrayToSort) {
         BinaryTree binaryTree = new BinaryTreeImpl(arrayToSort);
-        return binaryTree.getSortedTreeAsc();
+        return binaryTree.getSortedTreeDesc();
     }
 
 
